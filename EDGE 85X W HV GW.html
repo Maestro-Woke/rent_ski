@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EDGE 85X W HV GW</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+</head>
+
+<body>
+    <section id="header">
+        <a href="#"><img src="images/all/logo.png" class="logo" alt="logo" /></a>
+
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a class="active" href="shop.html">Alquiler</a></li>
+                <li><a href="contact.html">Información</a></li>
+                <li id="lg-bag">
+                    <a href="cart.html"><i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <a href="#" id="close"><i class="far fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="far fa-shopping-bag"></i></a><i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+    <section id="prodetails" class="section-p1">
+        <div class="single-pro-image">
+            <img src="images/nowproduct/HAWX ULTRA 85 W.jpg" width="100%" id="MainImg" alt="Main Product Image" />
+            <div class="small-img-group">
+                <div class="small-img-col">
+                    <img src="images/nowproduct/EDGE 85X W HV GW.jpg" width="100%" class="small-img"
+                        alt="HAWX ULTRA 85 W" />
+                </div>
+                <div class="small-img-col">
+                    <img src="images/nowproduct/EDGE 85X W HV GWDOP1_1.jpg" width="100%" class="small-img"
+                        alt="EDGE 85X W HV GWDOP_1" />
+                </div>
+                <div class="small-img-col">
+                    <img src="images/nowproduct/EDGE 85X W HV GWDOP1_2.jpg" width="100%" class="small-img"
+                        alt="EDGE 85X W HV GWDOP_2" />
+                </div>
+                <div class="small-img-col">
+                    <img src="images/nowproduct/EDGE 85X W HV GWDOP1_3.jpg" width="100%" class="small-img"
+                        alt="EDGE 85X W HV GWDOP_3" />
+                </div>
+            </div>
+        </div>
+        <div class="single-pro-details">
+            <h6>Atomic</h6>
+            <h4>EDGE 85X W HV GW</h4>
+            <h2>$8.40</h2>
+            <select id="product-size">
+                <option>Select Size</option>
+                <option value="XXL">XXL</option>
+                <option value="XL">XL</option>
+                <option value="Pequeña">Pequeña</option>
+                <option value="Medio">Medio</option>
+                <option value="Grande">Grande</option>
+            </select>
+            <input type="number" id="quantity" value="1" min="1" />
+            <button class="normal" onclick="handleAddToCart12()">Añadir a la cesta</button>
+            <h4>Detalles de producto</h4>
+            <span>Botas de esquí cálidas para dentro y fuera de pista; ideal para usuarios avanzados y expertos; cuello
+                textil esponjoso; carcasa de PU; puntera extendida para una mejor circulación sanguínea en el antepié;
+                Ajuste Del Soporte Trasero; El puño se puede alinear fácilmente gracias a la inclinación; 4 hebillas de
+                perfil bajo Spine-Flex finamente ajustables; El forro de ajuste perfecto brinda soporte para talones y
+                tobillos; con plantilla HP Frame y cierre de velcro de 35 mm; La suela de goma Curved Grip Walk favorece
+                el movimiento natural de rodadura al caminar; Ancho de tira: 102 mm/tamaño. 25,5, ideal para pies de
+                anchura media; Flexión 85; Peso: aprox. 3608 g (par).</span>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section logo">
+                <img src="images/all/logo.png" alt="Company Logo">
+            </div>
+            <div class="footer-section contact-info">
+                <p>Información del contacto</p>
+                <p>email@email.com</p>
+            </div>
+            <div class="footer-section social-media">
+                <p>Redes sociales</p>
+                <div class="social-icons">
+                    <a href="#"><img src="images/all/f.jpg" alt="Facebook Icon"></a>
+                    <a href="#"><img src="images/all/38-instagram-2-512.jpg" alt="Instagram Icon"></a>
+                    <a href="#"><img src="images/all/tw.jpg" alt="Twitter Icon"></a>
+                    <a href="#"><img src="images/all/youtube-icon.jpg" alt="YouTube Icon"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        var MainImg = document.getElementById("MainImg");
+        var smallimg = document.getElementsByClassName("small-img");
+
+        for (var i = 0; i < smallimg.length; i++) {
+            smallimg[i].onclick = function () {
+                MainImg.src = this.src;
+            };
+        }
+    </script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

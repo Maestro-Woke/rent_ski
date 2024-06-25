@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cart</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+</head>
+
+<body>
+  <section id="header">
+    <a href="#"><img src="images/all/logo.png" class="logo" alt="logo" /></a>
+    <div>
+      <ul id="navbar">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="shop.html">Alquiler</a></li>
+        <li><a href="contact.html">Información</a></li>
+        <li id="lg-bag">
+          <a class="active" href="cart.html"><i class="fa fa-shopping-bag" aria-hidden="true"></i></a>
+        </li>
+        <a href="#" id="close"><i class="far fa-times"></i></a>
+      </ul>
+    </div>
+    <div id="mobile">
+      <a href="cart.html"><i class="far fa-shopping-bag"></i></a><i id="bar" class="fas fa-outdent"></i>
+    </div>
+  </section>
+
+  <section id="page-headerr" class="about-header">
+    <h2>#Сarrito de artículos</h2>
+    <p>Tus artículos estarán aquí</p>
+  </section>
+
+  <section id="cart" class="section-p1">
+    <table width="100%">
+      <thead>
+        <tr>
+          <td>Eliminar</td>
+          <td>Image</td>
+          <td>Producto</td>
+          <td>Tamaño</td>
+          <td>Precio</td>
+          <td>Cantidad</td>
+          <td>Total parcial</td>
+        </tr>
+      </thead>
+      <tbody id="cart-items">
+        <!-- Cart items will be dynamically added here -->
+      </tbody>
+    </table>
+  </section>
+
+  <section id="cart-add" class="section-p1">
+    <div id="coupon">
+      <h3>Aplicar cupón</h3>
+      <div>
+        <input type="text" placeholder="Enter Your Coupon" /> 
+        <button class="normal">Aplicar</button>
+      </div>
+      <div id="user-type">
+        <label>
+          <input type="radio" name="user-type" value="student"> Estudiante
+        </label>
+        <label>
+          <input type="radio" name="user-type" value="senior"> Senior
+        </label>
+      </div>
+    </div>
+    </div>
+
+    <div id="subtotal">
+      <h3>Totales del carrito</h3>
+      <table>
+        <tr>
+          <td>Cart Subtotal</td>
+          <td id="cart-subtotal">$0.00</td>
+        </tr>
+        <tr>
+          <td>Descuento</td>
+          <td id="discount-amount">$0.00</td>
+        </tr>
+        <tr>
+          <td><strong>Total</strong></td>
+          <td><strong id="cart-total">$0.00</strong></td>
+        </tr>
+      </table>
+      <button class="normal">Proceed to checkout</button>
+      <button id="installment-btn" class="normal">Comprar en cuotas</button>
+      <button id="loyalty-bonus-btn" class="normal">Bono de cliente habitual</button>
+    </div>
+    <div id="installment-options" style="display: none;">
+      <h3>Opciones de Cuotas</h3>
+      <button class="installment-option" data-days="1" data-rate-normal="0.02" data-rate-loyalty="0.01">1 día
+        (2%/1%)</button>
+      <button class="installment-option" data-days="3" data-rate-normal="0.05" data-rate-loyalty="0.03">3 días
+        (5%/3%)</button>
+      <button class="installment-option" data-days="5" data-rate-normal="0.07" data-rate-loyalty="0.04">5 días
+        (7%/4%)</button>
+      <button class="installment-option" data-days="7" data-rate-normal="0.10" data-rate-loyalty="0.05">7 días
+        (10%/5%)</button>
+      <button class="installment-option" data-days="14" data-rate-normal="0.15" data-rate-loyalty="0.08">1 semana
+        (15%/8%)</button>
+      <button class="installment-option" data-days="30" data-rate-normal="0.20" data-rate-loyalty="0.10">1 mes
+        (20%/10%)</button>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section logo">
+        <img src="images/all/logo.png" alt="Company Logo">
+      </div>
+      <div class="footer-section contact-info">
+        <p>Información del contacto</p>
+        <p>email@email.com</p>
+      </div>
+      <div class="footer-section social-media">
+        <p>Redes sociales</p>
+        <div class="social-icons">
+          <a href="#"><img src="images/all/f.jpg" alt="Facebook Icon"></a>
+          <a href="#"><img src="images/all/38-instagram-2-512.jpg" alt="Instagram Icon"></a>
+          <a href="#"><img src="images/all/tw.jpg" alt="Twitter Icon"></a>
+          <a href="#"><img src="images/all/youtube-icon.jpg" alt="YouTube Icon"></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
